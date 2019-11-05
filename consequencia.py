@@ -10,6 +10,10 @@ premissas = [[[['c'], ['&'], [['~'], ['g']]], ['=>'], ['m']], ['c'], [['~'], ['m
 formula = ['q']
 #
 
+#Tem que retornar False
+premissas = [[['p'], ['=>'], [['q'], ['=>'], ['r']]]]
+formula = [['p'], ['=>'], [['r'], ['=>'], ['q']]]
+#
 
 
 def consequencia(premissas, formula):
