@@ -24,6 +24,8 @@ def valoracao(form, interpretacao):
             return valoracao(form[0],interpretacao) or valoracao(form[2],interpretacao)
         if (form[1] == ['&']):
             return valoracao(form[0],interpretacao) and valoracao(form[2],interpretacao)
+        if(form[1] == ['=>']):
+            return valoracao(form[0], interpretacao) and (not valoracao(form[2], interpretacao))
     if (len(form)==2):
         return not valoracao(form[1],interpretacao)
 
