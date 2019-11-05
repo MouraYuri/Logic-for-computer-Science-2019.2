@@ -7,13 +7,13 @@ conectivos = ['&', '~', '||', '=>', '<=>']
 
 #Tem que retornar True
 premissas = [[[['c'], ['&'], [['~'], ['g']]], ['=>'], ['m']], ['c'], [['~'], ['m']]]
-formula = ['q']
+formula = ['g']
 #
 
 
 #Tem que retornar False
-#premissas = [[['m'], ['=>'], [['i'], ['=>'], ['c']]], [['m'], ['=>'], ['i']]]
-#formula = [['m'], ['=>'], ['c']]
+#premissas = [[['p'], ['=>'], [['q'], ['=>'], ['r']]]]
+#formula = [['p'], ['=>'], [['r'], ['=>'], ['q']]]
 #
 
 def consequencia(premissas, formula):
@@ -47,7 +47,7 @@ def tabela_consequencia(premissas, formula, atomicas , interpretacao):
     interpretacao2.update(interpretacao)
     return tabela_consequencia(premissas, formula, atomicas, interpretacao1) and tabela_consequencia(premissas, formula, atomicas, interpretacao2)
 
-print(consequencia(premissas, formula))
+#consequencia(premissas, formula)
 
 
 
