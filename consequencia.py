@@ -11,10 +11,6 @@ formula = ['q']
 #
 
 
-#Tem que retornar False
-#premissas = [[['m'], ['=>'], [['i'], ['=>'], ['c']]], [['m'], ['=>'], ['i']]]
-#formula = [['m'], ['=>'], ['c']]
-#
 
 def consequencia(premissas, formula):
     atomicas = atom(formula)
