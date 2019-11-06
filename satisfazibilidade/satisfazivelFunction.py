@@ -1,6 +1,6 @@
 from consequencia import consequencia
 
-formula = [['p'], ['&'], [['~'], ['p']]]
+formula = [['p1'], ['||'], [['~'], ['p1']]]
 
 def satisfazivel(formula):
     aux = [['~']]
